@@ -42,16 +42,10 @@ module.exports = function (shipit) {
 };
 ```
 
-To deploy on staging, you must use the following command :
+The notifier will trigger on the 'published' event so you can use shipit-deploy by default or your own shipit task so long as you emit a published event.
 
 ```
 shipit staging deploy
-```
-
-You can rollback to the previous releases with the command :
-
-```
-shipit staging rollback
 ```
 
 ## Options
