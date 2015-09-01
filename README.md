@@ -19,6 +19,7 @@ No install yet, sorry.
 ```js
 module.exports = function (shipit) {
   require('shipit-deploy')(shipit);
+  require('shipit-newrelic')(shipit);
 
   shipit.initConfig({
     default: {
